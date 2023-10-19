@@ -111,7 +111,7 @@ forwardBtn.addEventListener("click", function () {
     songIndex++;
   }
   audioEl = new Audio(songs[songIndex].filePath);
-  audioEl.currentTime = 0;
+  // audioEl.currentTime = 0;
   audioElListener();
   setTimeout(() => {
     audioEl.play();
@@ -141,6 +141,7 @@ backBtn.addEventListener("click", function () {
 });
 function endTimeUpdate() {
   // console.log(audioEl.duration);
+  console.log(audioEl.duration);
   audioDurationMinute = parseInt(audioEl.duration / 60);
   audioDurationSeconds = parseInt(audioEl.duration % 60);
   audioDurationMinute =
