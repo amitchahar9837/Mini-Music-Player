@@ -111,12 +111,12 @@ forwardBtn.addEventListener("click", function () {
     songIndex++;
   }
   audioEl = new Audio(songs[songIndex].filePath);
-  // audioEl.currentTime = 0;
   audioElListener();
   setTimeout(() => {
     audioEl.play();
     songTitle.innerHTML = songs[songIndex].songName;
     endTimeUpdate();
+    titleImg.classList.add("rotate");
   }, 100);
   masterPlay.classList.remove("fa-circle-play");
   masterPlay.classList.add("fa-circle-pause");
@@ -135,13 +135,12 @@ backBtn.addEventListener("click", function () {
     audioEl.play();
     songTitle.innerHTML = songs[songIndex].songName;
     endTimeUpdate();
+    titleImg.classList.add("rotate");
   }, 100);
   masterPlay.classList.remove("fa-circle-play");
   masterPlay.classList.add("fa-circle-pause");
 });
 function endTimeUpdate() {
-  // console.log(audioEl.duration);
-  console.log(audioEl.duration);
   audioDurationMinute = parseInt(audioEl.duration / 60);
   audioDurationSeconds = parseInt(audioEl.duration % 60);
   audioDurationMinute =
