@@ -19,7 +19,7 @@ let songs = [
   },
   {
     songName:
-      "Allah Maaf Kare (Desi Boyz) - (Full Video Song) www.DJMaza.Com_(new)",
+      "Allah Maaf Kare (Desi Boyz) - (Full Video Song)",
     filePath:
       "musicList/Allah Maaf Kare (Desi Boyz) - (Full Video Song) www.DJMaza.Com_(new).mp3",
   },
@@ -35,7 +35,7 @@ let songs = [
   },
   {
     songName:
-      "musicList/Afghan jalebi😈slowed & Reverbed✨💜Lofi you Need🎶🖤 (64 kbps)",
+      "Afghan jalebi😈slowed & Reverbed✨💜Lofi you Need🎶🖤",
     filePath:
       "musicList/Afghan jalebi😈slowed & Reverbed✨💜Lofi you Need🎶🖤 (64 kbps).mp3",
   },
@@ -95,7 +95,6 @@ masterPlay.addEventListener(
       audioEl.play();
       audioElListener();
       titleImg.classList.add("rotate");
-      startTimeDuration = audioEl.duration;
     } else {
       audioEl.pause();
       titleImg.classList.remove("rotate");
@@ -151,16 +150,6 @@ function endTimeUpdate() {
       ? "0" + audioDurationSeconds
       : audioDurationSeconds;
   endTime.innerHTML = audioDurationMinute + ":" + audioDurationSeconds;
-}
-function updateStartTime() {
-  // console.log(audioEl.duration);
-  startTimeMinutes = parseInt(startTimeDuration / 60);
-  startTimeSeconds = parseInt(startTimeDuration % 60);
-  startTimeMinutes =
-    startTimeMinutes < 10 ? "0" + startTimeMinutes : startTimeMinutes;
-  startTimeSeconds =
-    startTimeSeconds < 10 ? "0" + startTimeSeconds : startTimeSeconds;
-  startTime.innerHTML = startTimeMinutes + ":" + startTimeSeconds;
 }
 function audioElListener() {
   audioEl.addEventListener("timeupdate", function () {
