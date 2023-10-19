@@ -79,6 +79,8 @@ body{
 }
 .background #title{
     text-align: center;
+    text-wrap: wrap;
+    width: 90%;
 }
 .musicProgress{
     width: 100%;
