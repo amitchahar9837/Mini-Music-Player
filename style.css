@@ -48,8 +48,8 @@ body{
 .musicSection .background{
     min-width: 250px;
     min-height: 250px;
-    width: 30vw;
-    height: 30vw;
+    width: 20vw;
+    height:20vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -77,9 +77,16 @@ body{
     0%{transform: rotate(0deg);}
     100%{transform: rotate(360deg);}
 }
+.background .musicTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .background #title{
     text-align: center;
-    text-wrap: wrap;
+    word-wrap: break-word;
     width:80vw;
     font-size: 2.5vmax;
 }

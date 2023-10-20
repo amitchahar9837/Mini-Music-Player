@@ -82,12 +82,54 @@ let songs = [
     filePath:
       "musicList/Kabhi_Jo_Badal_Barse_-_Lofi____Slowed___Reverb____Jackpot___Arijit_Singh___Moonlas(256k).mp3",
   },
+  {
+    songName:
+      "नसेनी चढ़ के आ जइयो मेरी बाखरिया में खाट Singer Satto Gurjar New Rasiya",
+    filePath:
+      "musicList/नसेनी चढ़ के आ जइयो मेरी बाखरिया में खाट __ Nseni Chadh Ke Aa Jaiyo __ Singer Satto Gurjar New Rasiya_hWBdIl7M594.mp3",
+  },
+  {
+    songName:
+      "Tuition_Badmashi_Ka__Lofi-Slowed_and_Reverb",
+    filePath:
+      "musicList/Tuition_Badmashi_Ka___Lofi-%255BSlowed_and_Reverb%255D___Masoom_Sharma___Manisha_Sharma___FEEL_MUSIC(256k).mp3",
+  },
+  {
+    songName:
+      "Thoda_Thoda__Pyaar__Hua__Tumse__💕💕💕 ",
+    filePath:
+      "musicList/Thoda Thoda Pyaar_320(PagalWorld.com.se).mp3",
+  },
+  {
+    songName:
+      "Thada_Bhartar___Sapna_Chaudhary_Raju_Punjabi_Sushila_Takhar_Ronit___Latest_Haryanvi_Song_2020",
+    filePath:
+      "musicList/Thada_Bhartar___Sapna_Chaudhary%252C_Raju_Punjabi___Sushila_Takhar%252C_Ronit___Latest_Haryanvi_Song_2020(256k).mp3",
+  },
+  {
+    songName:
+      "THAR_Song_Love_Kataria_New_Haryanvi_Song_2023",
+    filePath:
+      "musicList/THAR__Full_Song____Love_Kataria___Khushi_Baliyan___Jassi_Kirarkot___Komal_C___New_Haryanvi_Song_2023(256k).mp3",
+  },
+  {
+    songName:
+      "Swaha_x_faded_Trending_New_remix_iraq_english_2022",
+    filePath:
+      "musicList/Swaha_x_faded_remix___Tiktok_Trending_New_remix___minimix_iraq_english_2022_djwaz_marshall(256k).mp3",
+  },
+  {
+    songName:
+      "Same_Time_Same_Jagah_Slowed_&_Reverb__Lokdhun_Punjabi_Sandeep_Brar_Kulwinder_Billa",
+    filePath:
+      "musicList/Same_Time_Same_Jagah_-__Slowed___Reverb____%2540Lokdhun_Punjabi___Sandeep_Brar___Kulwinder_Billa___Lofi(256k).mp3",
+  },
 ];
-audioEl = new Audio(songs[songIndex].filePath);
 songTitle.innerHTML = songs[songIndex].songName;
 masterPlay.addEventListener(
   "click",
   (playMusic = () => {
+    audioEl=new Audio(songs[songIndex].filePath);
     endTimeUpdate();
     if (audioEl.paused || audioEl.duration <= 0) {
       masterPlay.classList.remove("fa-circle-play");
@@ -112,9 +154,9 @@ forwardBtn.addEventListener("click", function () {
   }
   audioEl = new Audio(songs[songIndex].filePath);
   setTimeout(() => {
+    endTimeUpdate();
     audioEl.play();
     songTitle.innerHTML = songs[songIndex].songName;
-    endTimeUpdate();
     audioElListener();
     titleImg.classList.add("rotate");
   }, 1000);
@@ -131,9 +173,9 @@ backBtn.addEventListener("click", function () {
   audioEl = new Audio(songs[songIndex].filePath);
   audioElListener();
   setTimeout(() => {
+    endTimeUpdate();
     audioEl.play();
     songTitle.innerHTML = songs[songIndex].songName;
-    endTimeUpdate();
     titleImg.classList.add("rotate");
   }, 100);
   masterPlay.classList.remove("fa-circle-play");
@@ -177,7 +219,7 @@ function checkforward() {
       songIndex++;
     }
     audioEl = new Audio(songs[songIndex].filePath);
-    audioEl.currentTime = 0;
+    endTimeUpdate();
     audioEl.play();
     songTitle.innerHTML = songs[songIndex].songName;
     audioElListener();
