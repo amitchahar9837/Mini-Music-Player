@@ -126,10 +126,10 @@ let songs = [
   },
 ];
 songTitle.innerHTML = songs[songIndex].songName;
+audioEl=new Audio(songs[songIndex].filePath);
 masterPlay.addEventListener(
   "click",
   (playMusic = () => {
-    audioEl=new Audio(songs[songIndex].filePath);
     endTimeUpdate();
     if (audioEl.paused || audioEl.duration <= 0) {
       masterPlay.classList.remove("fa-circle-play");
@@ -137,7 +137,8 @@ masterPlay.addEventListener(
       audioEl.play();
       audioElListener();
       titleImg.classList.add("rotate");
-    } else {
+    }
+    else{
       audioEl.pause();
       titleImg.classList.remove("rotate");
       masterPlay.classList.remove("fa-circle-pause");
