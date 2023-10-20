@@ -80,7 +80,8 @@ body{
 .background #title{
     text-align: center;
     text-wrap: wrap;
-    width: 90%;
+    width:80vw;
+    font-size: 2.5vmax;
 }
 .musicProgress{
     width: 100%;

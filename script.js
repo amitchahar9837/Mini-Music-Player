@@ -29,19 +29,19 @@ let songs = [
   },
   {
     songName:
-      "Ae_Dil_Hai_Mushkil_(Slowed_Reverb)_I_Arijit_Singh_Bollywood_Lofi_Mix_I_Extra_Lofi_Vibes(256k)",
+      "Ae_Dil_Hai_Mushkil_(Slowed_Reverb)_I_Arijit_Singh",
     filePath:
       "musicList/Ae_Dil_Hai_Mushkil_(Slowed_Reverb)_I_Arijit_Singh_Bollywood_Lofi_Mix_I_Extra_Lofi_Vibes(256k).mp3",
   },
   {
     songName:
-      "Afghan jalebi😈slowed & Reverbed✨💜Lofi you Need🎶🖤",
+      "Afghan jalebi Slowd & Reverb Lofi Song",
     filePath:
       "musicList/Afghan jalebi😈slowed & Reverbed✨💜Lofi you Need🎶🖤 (64 kbps).mp3",
   },
   {
     songName:
-      "Baaton_Ko_Teri_%5BSlowed_Reverb%5D____Arijit_Singh____Sad_Song_Lyrics____Urban_Edits(256k)",
+      "Baaton_Ko_Teri_Slowed_Reverb_Arijit_Singh_Sad_Song",
     filePath:
       "musicList/Baaton_Ko_Teri_Slowed_Reverb____Arijit_Singh____Sad_Song.mp3",
   },
@@ -60,25 +60,25 @@ let songs = [
   },
   {
     songName:
-      "Humnava_Mere__Slowed_And_Reverb__Jubin_Nautiyal___Sad_Song___Lofi_Music_Channel(256k)",
+      "Humnava_Mere__Slowed_And_Reverb__Jubin_Nautiyal",
     filePath:
       "musicList/Humnava_Mere__Slowed_And_Reverb__Jubin_Nautiyal___Sad_Song___Lofi_Music_Channel(256k).mp3",
   },
   {
     songName:
-      "Jale__Official_Video____Sapna_Choudhary___Shiva_Choudhary___New_Haryanvi_Songs_Haryanavi_2023(256k)",
+      "Jale Official Song Sapna Chaudhary New Haryanvi Song",
     filePath:
       "musicList/Jale__Official_Video____Sapna_Choudhary___Shiva_Choudhary___New_Haryanvi_Songs_Haryanavi_2023(256k).mp3",
   },
   {
     songName:
-      "K_H_A_M_O_S_H_I_Y_A_N_💞tere_suno_(_slowed_&_reverb_)__MOON_LOFI(256k)",
+      "K_H_A_M_O_S_H_I_Y_A_N_💞tere_suno(slowed & reverb)",
     filePath:
       "musicList/K_H_A_M_O_S_H_I_Y_A_N_💞tere_suno_(_slowed_&_reverb_)__MOON_LOFI(256k).mp3",
   },
   {
     songName:
-      "Kabhi_Jo_Badal_Barse_-_Lofi____Slowed___Reverb____Jackpot___Arijit_Singh___Moonlas(256k)",
+      "Kabhi_Jo_Badal_Barse_-_Lofi_Slowed_Reverb_Jackpot_Arijit_Singh",
     filePath:
       "musicList/Kabhi_Jo_Badal_Barse_-_Lofi____Slowed___Reverb____Jackpot___Arijit_Singh___Moonlas(256k).mp3",
   },
@@ -111,13 +111,13 @@ forwardBtn.addEventListener("click", function () {
     songIndex++;
   }
   audioEl = new Audio(songs[songIndex].filePath);
-  audioElListener();
   setTimeout(() => {
     audioEl.play();
     songTitle.innerHTML = songs[songIndex].songName;
     endTimeUpdate();
+    audioElListener();
     titleImg.classList.add("rotate");
-  }, 100);
+  }, 1000);
   masterPlay.classList.remove("fa-circle-play");
   masterPlay.classList.add("fa-circle-pause");
 });
@@ -129,7 +129,6 @@ backBtn.addEventListener("click", function () {
     songIndex--;
   }
   audioEl = new Audio(songs[songIndex].filePath);
-  audioEl.currentTime = 0;
   audioElListener();
   setTimeout(() => {
     audioEl.play();
