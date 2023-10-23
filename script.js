@@ -18,8 +18,7 @@ let songs = [
     filePath: "musicList/All Black-(Mr-Jatt.com).mp3",
   },
   {
-    songName:
-      "Allah Maaf Kare (Desi Boyz) - (Full Video Song)",
+    songName: "Allah Maaf Kare (Desi Boyz) - (Full Video Song)",
     filePath:
       "musicList/Allah Maaf Kare (Desi Boyz) - (Full Video Song) www.DJMaza.Com_(new).mp3",
   },
@@ -28,20 +27,17 @@ let songs = [
     filePath: "musicList/Allah Ve - Jassie Gill.mp3",
   },
   {
-    songName:
-      "Ae_Dil_Hai_Mushkil_(Slowed_Reverb)_I_Arijit_Singh",
+    songName: "Ae_Dil_Hai_Mushkil_(Slowed_Reverb)_I_Arijit_Singh",
     filePath:
       "musicList/Ae_Dil_Hai_Mushkil_(Slowed_Reverb)_I_Arijit_Singh_Bollywood_Lofi_Mix_I_Extra_Lofi_Vibes(256k).mp3",
   },
   {
-    songName:
-      "Afghan jalebi Slowd & Reverb Lofi Song",
+    songName: "Afghan jalebi Slowd & Reverb Lofi Song",
     filePath:
       "musicList/Afghan jalebi😈slowed & Reverbed✨💜Lofi you Need🎶🖤 (64 kbps).mp3",
   },
   {
-    songName:
-      "Baaton_Ko_Teri_Slowed_Reverb_Arijit_Singh_Sad_Song",
+    songName: "Baaton_Ko_Teri_Slowed_Reverb_Arijit_Singh_Sad_Song",
     filePath:
       "musicList/Baaton_Ko_Teri_Slowed_Reverb____Arijit_Singh____Sad_Song.mp3",
   },
@@ -59,26 +55,22 @@ let songs = [
     filePath: "musicList/Elevated_(Official_Audio)_-_Shubh(256k).mp3",
   },
   {
-    songName:
-      "Humnava_Mere__Slowed_And_Reverb__Jubin_Nautiyal",
+    songName: "Humnava_Mere__Slowed_And_Reverb__Jubin_Nautiyal",
     filePath:
       "musicList/Humnava_Mere__Slowed_And_Reverb__Jubin_Nautiyal___Sad_Song___Lofi_Music_Channel(256k).mp3",
   },
   {
-    songName:
-      "Jale Official Song Sapna Chaudhary New Haryanvi Song",
+    songName: "Jale Official Song Sapna Chaudhary New Haryanvi Song",
     filePath:
       "musicList/Jale__Official_Video____Sapna_Choudhary___Shiva_Choudhary___New_Haryanvi_Songs_Haryanavi_2023(256k).mp3",
   },
   {
-    songName:
-      "K_H_A_M_O_S_H_I_Y_A_N_💞tere_suno(slowed & reverb)",
+    songName: "K_H_A_M_O_S_H_I_Y_A_N_💞tere_suno(slowed & reverb)",
     filePath:
       "musicList/K_H_A_M_O_S_H_I_Y_A_N_💞tere_suno_(_slowed_&_reverb_)__MOON_LOFI(256k).mp3",
   },
   {
-    songName:
-      "Kabhi_Jo_Badal_Barse_-_Lofi_Slowed_Reverb_Jackpot_Arijit_Singh",
+    songName: "Kabhi_Jo_Badal_Barse_-_Lofi_Slowed_Reverb_Jackpot_Arijit_Singh",
     filePath:
       "musicList/Kabhi_Jo_Badal_Barse_-_Lofi____Slowed___Reverb____Jackpot___Arijit_Singh___Moonlas(256k).mp3",
   },
@@ -89,16 +81,13 @@ let songs = [
       "musicList/नसेनी चढ़ के आ जइयो मेरी बाखरिया में खाट __ Nseni Chadh Ke Aa Jaiyo __ Singer Satto Gurjar New Rasiya_hWBdIl7M594.mp3",
   },
   {
-    songName:
-      "Tuition_Badmashi_Ka__Lofi-Slowed_and_Reverb",
+    songName: "Tuition_Badmashi_Ka__Lofi-Slowed_and_Reverb",
     filePath:
       "musicList/Tuition_Badmashi_Ka___Lofi-%255BSlowed_and_Reverb%255D___Masoom_Sharma___Manisha_Sharma___FEEL_MUSIC(256k).mp3",
   },
   {
-    songName:
-      "Thoda_Thoda__Pyaar__Hua__Tumse__💕💕💕 ",
-    filePath:
-      "musicList/Thoda Thoda Pyaar_320(PagalWorld.com.se).mp3",
+    songName: "Thoda_Thoda__Pyaar__Hua__Tumse__💕💕💕 ",
+    filePath: "musicList/Thoda Thoda Pyaar_320(PagalWorld.com.se).mp3",
   },
   {
     songName:
@@ -107,14 +96,12 @@ let songs = [
       "musicList/Thada_Bhartar___Sapna_Chaudhary%252C_Raju_Punjabi___Sushila_Takhar%252C_Ronit___Latest_Haryanvi_Song_2020(256k).mp3",
   },
   {
-    songName:
-      "THAR_Song_Love_Kataria_New_Haryanvi_Song_2023",
+    songName: "THAR_Song_Love_Kataria_New_Haryanvi_Song_2023",
     filePath:
       "musicList/THAR__Full_Song____Love_Kataria___Khushi_Baliyan___Jassi_Kirarkot___Komal_C___New_Haryanvi_Song_2023(256k).mp3",
   },
   {
-    songName:
-      "Swaha_x_faded_Trending_New_remix_iraq_english_2022",
+    songName: "Swaha_x_faded_Trending_New_remix_iraq_english_2022",
     filePath:
       "musicList/Swaha_x_faded_remix___Tiktok_Trending_New_remix___minimix_iraq_english_2022_djwaz_marshall(256k).mp3",
   },
@@ -126,7 +113,7 @@ let songs = [
   },
 ];
 songTitle.innerHTML = songs[songIndex].songName;
-audioEl=new Audio(songs[songIndex].filePath);
+audioEl = new Audio(songs[songIndex].filePath);
 masterPlay.addEventListener(
   "click",
   (playMusic = () => {
@@ -137,8 +124,7 @@ masterPlay.addEventListener(
       audioEl.play();
       audioElListener();
       titleImg.classList.add("rotate");
-    }
-    else{
+    } else {
       audioEl.pause();
       titleImg.classList.remove("rotate");
       masterPlay.classList.remove("fa-circle-pause");
@@ -154,13 +140,16 @@ forwardBtn.addEventListener("click", function () {
     songIndex++;
   }
   audioEl = new Audio(songs[songIndex].filePath);
+  audioEl.currentTime = 0;
+  startTime.innerText = "--:--";
+  startTime.innerText = "--:--";
   setTimeout(() => {
-    endTimeUpdate();
-    audioEl.play();
     songTitle.innerHTML = songs[songIndex].songName;
+    audioEl.play();
+    endTimeUpdate();
     audioElListener();
     titleImg.classList.add("rotate");
-  }, 1000);
+  }, 600);
   masterPlay.classList.remove("fa-circle-play");
   masterPlay.classList.add("fa-circle-pause");
 });
@@ -172,11 +161,14 @@ backBtn.addEventListener("click", function () {
     songIndex--;
   }
   audioEl = new Audio(songs[songIndex].filePath);
-  audioElListener();
+  audioEl.currentTime = 0;
+  startTime.innerText = "--:--";
+  endTime.innerText = "--:--";
   setTimeout(() => {
-    endTimeUpdate();
-    audioEl.play();
     songTitle.innerHTML = songs[songIndex].songName;
+    audioEl.play();
+    endTimeUpdate();
+    audioElListener();
     titleImg.classList.add("rotate");
   }, 100);
   masterPlay.classList.remove("fa-circle-play");
@@ -220,9 +212,12 @@ function checkforward() {
       songIndex++;
     }
     audioEl = new Audio(songs[songIndex].filePath);
-    endTimeUpdate();
-    audioEl.play();
-    songTitle.innerHTML = songs[songIndex].songName;
-    audioElListener();
+    audioEl.currentTime = 0;
+    setTimeout(() => {
+      songTitle.innerHTML = songs[songIndex].songName;
+      audioEl.play();
+      endTimeUpdate();
+      audioElListener();
+    }, 600);
   }
 }

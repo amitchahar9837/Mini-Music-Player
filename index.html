@@ -10,7 +10,6 @@
 
 <body>
     <div class="wrapper" id="app">
-        <!-- Your Content will go -->
         <div class="topSection">
             <p>Now Playing</p>
             <div class="menubar">
@@ -28,9 +27,9 @@
             </div>
             <div class="musicProgress" id="musicProgress">
                 <div class="musicDetails">
-                    <p id="startTime">00:00</p>
+                    <p id="startTime">--:--</p>
                     <input type="range" name="seek" id="progressbar" min="0" max="100" title="seek" value="0"/>
-                    <p id="endTime">00:00</p>
+                    <p id="endTime">--:--</p>
                 </div>
                 <div class="icons">
                     <i class="fa-solid fa-2x fa-backward-step" title="previous" id="backwardBtn"></i>
@@ -40,7 +39,6 @@
             </div>
         </div>
     </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script> -->
     <script src="https://kit.fontawesome.com/359fed887d.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
