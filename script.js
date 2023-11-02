@@ -14,102 +14,45 @@ const titleImg = document.querySelector(".background .titleImage img");
 
 let songs = [
   {
-    songName: "All Black-(Mr-Jatt.com)",
-    filePath: "musicList/All Black-(Mr-Jatt.com).mp3",
+    songName: "3_Peg_Sharry_Mann_mp3_song",
+    filePath: "musicList/3_Peg_Sharry_Mann_mp3_song.mp3",
   },
   {
-    songName: "Allah Maaf Kare (Desi Boyz) - (Full Video Song)",
-    filePath:
-      "musicList/Allah Maaf Kare (Desi Boyz) - (Full Video Song) www.DJMaza.Com_(new).mp3",
-  },
-  {
-    songName: "Allah Ve - Jassie Gill",
-    filePath: "musicList/Allah Ve - Jassie Gill.mp3",
-  },
-  {
-    songName: "Ae_Dil_Hai_Mushkil_(Slowed_Reverb)_I_Arijit_Singh",
-    filePath:
-      "musicList/Ae_Dil_Hai_Mushkil_(Slowed_Reverb)_I_Arijit_Singh_Bollywood_Lofi_Mix_I_Extra_Lofi_Vibes(256k).mp3",
-  },
-  {
-    songName: "Afghan jalebi Slowd & Reverb Lofi Song",
+    songName: "Afghan jalebi😈slowed & Reverbed✨💜",
     filePath:
       "musicList/Afghan jalebi😈slowed & Reverbed✨💜Lofi you Need🎶🖤 (64 kbps).mp3",
   },
   {
-    songName: "Baaton_Ko_Teri_Slowed_Reverb_Arijit_Singh_Sad_Song",
+    songName: "All Black-(Mr-Jatt.com)",
+    filePath: "musicList/All Black-(Mr-Jatt.com)Allah Ve - Jassie Gill.mp3",
+  },
+  {
+    songName: "Baby Ko Bass Pasand Hai(etcmobi.com)",
     filePath:
-      "musicList/Baaton_Ko_Teri_Slowed_Reverb____Arijit_Singh____Sad_Song.mp3",
+      "musicList/Baby Ko Bass Pasand Hai(etcmobi.com).mp3",
   },
   {
-    songName: "bach_gyi_jaan_meri_ho_ko_na_song_latest_haryanvi💘💫(256k)",
+    songName: "High_Heels-Honey_Singhwww.Mp3MaD.Com",
     filePath:
-      "musicList/bach_gyi_jaan_meri_ho_ko_na_song_latest_haryanvi💘💫(256k).mp3",
+      "musicList/High_Heels-Honey_Singhwww.Mp3MaD.Com.mp3",
   },
   {
-    songName: "Daru Badnam  8D  Reverb   Music Girl",
-    filePath: "musicList/Daru Badnam  8D  Reverb   Music Girl.mp3",
-  },
-  {
-    songName: "Elevated_(Official_Audio)_-_Shubh(256k)",
-    filePath: "musicList/Elevated_(Official_Audio)_-_Shubh(256k).mp3",
-  },
-  {
-    songName: "Humnava_Mere__Slowed_And_Reverb__Jubin_Nautiyal",
+    songName: "Jeene_Laga_Hoon-Atif_Aslamwww.Mp3MaD.Com",
     filePath:
-      "musicList/Humnava_Mere__Slowed_And_Reverb__Jubin_Nautiyal___Sad_Song___Lofi_Music_Channel(256k).mp3",
+      "musicList/Jeene_Laga_Hoon-Atif_Aslamwww.Mp3MaD.Com.mp3",
   },
   {
-    songName: "Jale Official Song Sapna Chaudhary New Haryanvi Song",
+    songName: "KGF__Gali_Gali_Video_Song___Neha_Kakkar___Mouni_Roy___Tanishk_Bagchi___Rashmi_Vi",
     filePath:
-      "musicList/Jale__Official_Video____Sapna_Choudhary___Shiva_Choudhary___New_Haryanvi_Songs_Haryanavi_2023(256k).mp3",
+      "musicList/KGF__Gali_Gali_Video_Song___Neha_Kakkar___Mouni_Roy___Tanishk_Bagchi___Rashmi_Vi.mp3",
   },
   {
-    songName: "K_H_A_M_O_S_H_I_Y_A_N_💞tere_suno(slowed & reverb)",
-    filePath:
-      "musicList/K_H_A_M_O_S_H_I_Y_A_N_💞tere_suno_(_slowed_&_reverb_)__MOON_LOFI(256k).mp3",
+    songName: "Kyon Ki = Dil Ke Badle Sanam.lite",
+    filePath: "musicList/Kyon Ki = Dil Ke Badle Sanam.lite.mp3",
   },
   {
-    songName: "Kabhi_Jo_Badal_Barse_-_Lofi_Slowed_Reverb_Jackpot_Arijit_Singh",
-    filePath:
-      "musicList/Kabhi_Jo_Badal_Barse_-_Lofi____Slowed___Reverb____Jackpot___Arijit_Singh___Moonlas(256k).mp3",
-  },
-  {
-    songName:
-      "नसेनी चढ़ के आ जइयो मेरी बाखरिया में खाट Singer Satto Gurjar New Rasiya",
-    filePath:
-      "musicList/नसेनी चढ़ के आ जइयो मेरी बाखरिया में खाट __ Nseni Chadh Ke Aa Jaiyo __ Singer Satto Gurjar New Rasiya_hWBdIl7M594.mp3",
-  },
-  {
-    songName: "Tuition_Badmashi_Ka__Lofi-Slowed_and_Reverb",
-    filePath:
-      "musicList/Tuition_Badmashi_Ka___Lofi-%255BSlowed_and_Reverb%255D___Masoom_Sharma___Manisha_Sharma___FEEL_MUSIC(256k).mp3",
-  },
-  {
-    songName: "Thoda_Thoda__Pyaar__Hua__Tumse__💕💕💕 ",
-    filePath: "musicList/Thoda Thoda Pyaar_320(PagalWorld.com.se).mp3",
-  },
-  {
-    songName:
-      "Thada_Bhartar___Sapna_Chaudhary_Raju_Punjabi_Sushila_Takhar_Ronit___Latest_Haryanvi_Song_2020",
-    filePath:
-      "musicList/Thada_Bhartar___Sapna_Chaudhary%252C_Raju_Punjabi___Sushila_Takhar%252C_Ronit___Latest_Haryanvi_Song_2020(256k).mp3",
-  },
-  {
-    songName: "THAR_Song_Love_Kataria_New_Haryanvi_Song_2023",
-    filePath:
-      "musicList/THAR__Full_Song____Love_Kataria___Khushi_Baliyan___Jassi_Kirarkot___Komal_C___New_Haryanvi_Song_2023(256k).mp3",
-  },
-  {
-    songName: "Swaha_x_faded_Trending_New_remix_iraq_english_2022",
-    filePath:
-      "musicList/Swaha_x_faded_remix___Tiktok_Trending_New_remix___minimix_iraq_english_2022_djwaz_marshall(256k).mp3",
-  },
-  {
-    songName:
-      "Same_Time_Same_Jagah_Slowed_&_Reverb__Lokdhun_Punjabi_Sandeep_Brar_Kulwinder_Billa",
-    filePath:
-      "musicList/Same_Time_Same_Jagah_-__Slowed___Reverb____%2540Lokdhun_Punjabi___Sandeep_Brar___Kulwinder_Billa___Lofi(256k).mp3",
+    songName: "Exclusive: LOVE DOSE Full Video Song",
+    filePath: "musicList/LOVEDO~1.mp3",
   },
 ];
 songTitle.innerHTML = songs[songIndex].songName;
